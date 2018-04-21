@@ -1,0 +1,23 @@
+{
+  "name": "react-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "main": "server/server.js",
+  "proxy": "http://localhost:3700",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "nodemailer": "^4.6.4",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-motion": "^0.5.2",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
