@@ -1,0 +1,46 @@
+#links, a {
+    text-decoration: inherit;
+    color: black !important;
+    font-size: 1.2em;
+}
+
+.home {
+    padding: 15px; 
+    border: solid .1em black;
+    margin-top: 5em;
+}
+
+h1, h2 {
+    padding: 1em;
+}
+
+#links:hover, a {
+    color: black;
+    text-decoration: none;
+}
+.links {
+    border-left: solid #58fdcc .2em;
+    padding: 1em;
+    padding-left: 1.7em;
+    height: 80px;
+}
+
+span:hover {
+    text-decoration: none;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    border-bottom: solid #58fdcc .3em;
+    border-bottom-width: 75%;
+}
+
+.me {
+ height: 400px;
+ border-radius: 15em;
+ margin-top: 3em;
+}
