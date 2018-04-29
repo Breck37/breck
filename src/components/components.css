@@ -1,14 +1,14 @@
+/*   Header Component  */
 #links, a {
     text-decoration: inherit;
     color: black !important;
     font-size: 1.2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-.home {
-    padding: 15px; 
-    border: solid .1em black;
-    margin-top: 5em;
-}
 
 h1, h2 {
     padding: 1em;
@@ -19,14 +19,37 @@ h1, h2 {
     text-decoration: none;
 }
 .links {
-    border-left: solid #58fdcc .2em;
     padding: 1em;
-    padding-left: 1.7em;
+    /* padding: 1.7em; */
     height: 80px;
+    margin: 0 -10px;
 }
 
-span:hover {
+.head-lines {
+    width: .2em;
+    background-color: #58fdcc;
+    animation: border .7s ease-in;
+    animation-fill-mode: forwards;
+    margin: 0;
+}
+
+.head-lines.purple {
+    background-color: rgb(157, 0, 213);
+}
+.head-lines.blue {
+    background-color: rgb(1, 43, 195);
+}
+.head-lines.red {
+    background-color: red;
+}
+.head-lines.green {
+    background-color: rgb(0, 227, 23);
+}
+
+.links:hover {
     text-decoration: none;
+    background-color: grey;
+    background-size: cover;
 }
 
 .main {
@@ -35,8 +58,87 @@ span:hover {
     justify-content: space-around;
     align-items: center;
     padding: 15px;
-    border-bottom: solid #58fdcc .3em;
-    border-bottom-width: 75%;
+}
+
+.line {
+    height: 1px;
+    width: 1100px;
+    border-bottom: .3em solid #58fdcc;
+    animation: line .7s ease;
+    animation-fill-mode: forwards;
+}
+.line.purple {
+    border-bottom: .3em solid rgb(157, 0, 213);
+}
+.line.blue {
+    border-bottom: .3em solid rgb(1, 43, 195);
+}
+.line.red {
+    border-bottom: .3em solid red;
+}
+.line.green {
+    border-bottom: .3em solid rgb(0, 227, 23);
+}
+
+
+@keyframes border {
+    0% {
+        height: 0px
+    }
+    50% {
+        height: 40px
+    }
+    100% {
+        height: 80px
+    }
+}
+
+
+@keyframes line {
+        0% {
+            width: 10vw;
+        }
+        10% {
+            width: 20vw;
+        }
+        20% {
+            width: 30vw;
+        }
+        30% {
+            width: 37vw;
+        }
+        40% {
+            width: 45vw;
+        }
+        50% {
+            width: 55vw;
+        }
+        60% {
+            width: 65vw;
+        }
+        70% {
+            width: 75%;
+        }
+        80% {
+            width: 85vw;
+        }
+        90% {
+            width: 92%;
+        }
+        100% {
+            width: 100vw;
+        }
+    
+}
+
+/*  END HEADER COMPONENT */
+
+
+
+.home {
+    padding: 15px; 
+    border: solid .1em black;
+    margin-top: 5em;
 }
 
 .me {
@@ -44,3 +146,4 @@ span:hover {
  border-radius: 15em;
  margin-top: 3em;
 }
+

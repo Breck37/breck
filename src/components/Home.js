@@ -5,7 +5,7 @@ import './components.css'
 
 const Home = () => {
     return (
-        <div>
+        <div class='home-main'>
             <h1 className='intro-one'>Hi, I'm <b>Brent Eckert</b></h1>
             <h2>Full-Stack Web Developer</h2>
 
