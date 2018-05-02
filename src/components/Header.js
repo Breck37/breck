@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import "./components.css";
-import StyledLink from "./StyledLink";
+import "./CSS/components.css";
+import StyledLink from "./Styled/StyledLink";
 
 class Header extends Component {
   constructor() {

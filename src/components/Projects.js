@@ -12,7 +12,9 @@ class Projects extends Component {
         return (
             <div>
                 <Header />
+                <div className="container">
                 <h1>Projects component</h1>
+                </div>
             </div>
         )
     }

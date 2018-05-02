@@ -1,4 +1,19 @@
-/*   Header Component  */
+/* GLOBAL STYLES */
+html {
+    background-color: #58fdcc;
+}
+.container {
+    min-height: 100vh;
+    min-width: 75vw;
+    background-color: grey;
+}
+
+
+/* END GLOBAL */
+
+
+/*   HEADER COMPONENT  */
+
 #links, a {
     text-decoration: inherit;
     color: black !important;
@@ -22,6 +37,7 @@ h1, h2 {
     padding: 1em;
     /* padding: 1.7em; */
     height: 80px;
+    width: 130px;
     margin: 0 -10px;
 }
 
@@ -135,11 +151,18 @@ h1, h2 {
 
 
 
-.home {
-    padding: 15px; 
-    border: solid .1em black;
-    margin-top: 5em;
-}
+/* MAIN COMPONENT */
+
+
+
+
+
+/* END MAIN COMPONENT */
+
+
+
+
+/* LANDING PAGE COMPONENT */
 
 .me {
  height: 400px;
@@ -147,3 +170,30 @@ h1, h2 {
  margin-top: 3em;
 }
 
+.home-main {
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+
+.home {
+    padding: 15px; 
+    border: solid .2em purple;
+    margin: 5em auto;
+    animation: button 5s infinite;
+    list-style: none;
+    /* animation-fill-mode: forwards; */
+}
+
+.home:hover {
+    background-color: #04f2ff;
+    color: purple;
+}
+
+
+
+/* END LANDING PAGE */
+
+.word {
+    color: blue;
+}

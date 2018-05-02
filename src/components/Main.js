@@ -1,6 +1,12 @@
 import React, { Component } from 'react'
 import Header from './Header'
-import './components.css'
+import './CSS/components.css'
+import glam from 'glamorous'
+
+const Word = glam.div({
+    color: 'red',
+    fontSize: 24,
+})
 
 class Class extends Component {
     constructor(props) {
@@ -12,8 +18,12 @@ class Class extends Component {
     render() {
         return (
             <div>
-                <Header />
-                <h1>Hey</h1>
+                    <Header />
+                <div className='container'>
+                    <h1>Hey</h1>
+
+                    <Word className='word'>Hello</Word>
+                </div>
             </div>
         )
     }
