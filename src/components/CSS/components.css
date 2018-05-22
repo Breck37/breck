@@ -151,16 +151,6 @@ h1, h2 {
 
 
 
-/* MAIN COMPONENT */
-
-
-
-
-
-/* END MAIN COMPONENT */
-
-
-
 
 /* LANDING PAGE COMPONENT */
 
@@ -197,3 +187,36 @@ h1, h2 {
 .word {
     color: blue;
 }
+
+/* PROJECT COMPONENT */
+
+.project-display {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(2, 1fr 2fr);
+    grid-template-rows: repeat(4, 100px 1fr);
+}
+
+.project {
+    background-color: black;
+    /* width: 15em; */
+
+}
+
+.project.one {
+    grid-row: 1 / span 3;
+    grid-column: 1 / span 2;
+}
+
+.project-three {
+    grid-column: 2 / span 3;
+    grid-row: 3 / span 2;
+}
+
+.project.four {
+    grid-row: 3 / span 4;
+    grid-column: 4;
+    opacity: .5;
+}
+
+/* END PROJECT COMPONENT */
