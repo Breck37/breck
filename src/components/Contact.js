@@ -15,10 +15,12 @@ class Contact extends Component {
                 <div className="container">
                 <h1>Contact Component</h1>
                 <form action="">
-                    <input name='name'type="text"/>
-                    <input name='email' type="text"/>
-                    <textarea name="content" id="" cols="30" rows="10"></textarea>
-                    <div>
+                        <div className="top">
+                            <input name='name'type="text" placeholder='Enter name here'/>
+                            <input name='email' type="text" placeholder='Enter email here'/>
+                        </div>
+                    <textarea name="content" id="" cols="30" rows="10" placeholder='Enter text here'></textarea>
+                    <div className='bottom'>
                         <button>Send</button>
                         <button>Clear</button>
                     </div>

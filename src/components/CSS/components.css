@@ -1,11 +1,17 @@
 /* GLOBAL STYLES */
 html {
     background-color: #58fdcc;
+    /* background: -webkit-linear-gradient(top, #ff3232 3%,#f2a32e 14%,#eff92f 23%,#2ef746 34%,#2ff9f3 48%,#207cca 62%,#8428fc 75%,#f927f9 90%,#7db9e8 100%); */
+    /* background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet); For Safari 5.1 to 6.0 */
+    /* background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet); For Opera 11.1 to 12.0 */
+    /* background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet); For Firefox 3.6 to 15 */
+    /* background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet); Standard syntax (must be last) */
 }
 .container {
     min-height: 90vh;
     min-width: 75vw;
     background-color: grey;
+    /* background: -webkit-linear-gradient(top, #ff3232 3%,#f2a32e 14%,#eff92f 23%,#2ef746 34%,#2ff9f3 48%,#207cca 62%,#8428fc 75%,#f927f9 90%,#7db9e8 100%); */
 }
 
 
@@ -164,6 +170,65 @@ h1, h2 {
 .home-main {
     margin: 0 auto;
     min-height: 100vh;
+    animation: colorfade;
+    animation-duration: 4s;
+}
+
+@keyframes colorfade {
+    0%{
+        background-color: lightblue;
+    }
+    10% {
+        background-color: aqua;
+    }
+    20% {
+        background-color: rgb(27, 27, 254);
+    }
+    30% {
+        background-color: rgb(90, 0, 129);
+    }
+    60% {
+        background-color: #fff;
+    }
+    70% {
+        background-color: limegreen;
+    }
+    80% {
+        background-color: hotpink;
+    }
+    90% {
+        background-color: black;
+    }
+    100% {
+        background-color: #fff;
+    }
+}
+
+.intro-div {
+    animation: flipper;
+    animation-duration: 4s;
+}
+
+@keyframes flipper {
+    20% {
+        transition-duration: .5s;
+        transform: scaleX(-1);
+        background: orange;
+        color: #fff;
+    }
+    50% {
+        background: red;
+        /* background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
+        background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+        background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+        background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 20vw; */
+    }
+    100% {
+        transform: scaleX(+1);
+    }
 }
 
 
@@ -227,3 +292,62 @@ h1, h2 {
 }
 
 /* END PROJECT COMPONENT */
+
+
+/* CONTACT COMPONENT */ 
+form {
+    height: 70vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    /* align-content: center; */
+}
+
+.top {
+    /* background: rgb(208, 118, 118); */
+    margin: 0 auto;
+    width: 85%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.top > input {
+    background:transparent;
+    border: none;
+    border-bottom: solid red 2px;
+    width: 40%;
+    /* hieght: 125%; */
+    height: 1em;
+    font-size: 2em;
+}
+
+.top > input::placeholder, form textarea::placeholder {
+    color: rgb(205, 205, 205);
+}
+
+.bottom {
+    /* background: red; */
+    margin: 0 auto;
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bottom > button {
+    width: 30%;
+    font-size: 1.5em;
+    background: transparent;
+    color: rgb(205, 205, 205);
+    border: solid red 1px;
+}
+
+form textarea {
+    background: transparent;
+    border: solid red 2px;
+    /* border-right: solid red 2px; */
+    border-top: none;
+    border-left: none;
+    margin: 0 auto;
+    width: 75%;
+    font-size: 1.5em;
+}
