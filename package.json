@@ -2,6 +2,7 @@
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
+  "main": "server/server.js",
   "dependencies": {
     "body-parser": "^1.18.2",
     "dotenv": "^5.0.1",
