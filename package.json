@@ -6,7 +6,7 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "dotenv": "^5.0.1",
-    "express": "^4.16.3",
+    "express": "^4.17.1",
     "glamor": "^2.20.40",
     "glamorous": "^4.12.5",
     "nodemailer": "^4.6.4",
